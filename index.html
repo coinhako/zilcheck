@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="dist/bulma.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <section class="hero is-info is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="container">
+                        <h1 class="title">Zilliqa Address Tool</h1>
+                        <h2 class="subtitle">Quickly validate your Zilliqa address</h2>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="buttons has-addons is-centered is-hidden-mobile">
+                        <span class="button is-success" id="ex-zil">Zilliqa Address</span>
+                        <span class="button is-warning" id="ex-zil-no-checksum">Zilliqa Address w/o Checksum</span>
+                        <span class="button is-danger" id="ex-eth">Ethereum Address</span>
+                    </div>
+                    <div class="buttons is-centered is-hidden-tablet">
+                        <span class="button is-success" id="mex-zil">Zilliqa Address</span>
+                        <span class="button is-warning" id="mex-zil-no-checksum">Zilliqa Address w/o Checksum</span>
+                        <span class="button is-danger" id="mex-eth">Ethereum Address</span>
+                    </div>
+                    <div class="container has-text-centered">
+                        <div class="columns is-centered">
+                            <div class="column is-5">
+                                <div class="field has-addons">
+                                    <div class="control is-expanded">
+                                        <input class="input" type="text" id="address" placeholder="Address">
+                                    </div>
+                                    <div class="control">
+                                        <a class="button is-info is-inverted" id="check">
+                                            Check  
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="buttons has-addons is-centered is-hidden-tablet">
+                        <span id="m-chk-address" class="button is-dark is-small">No Address</span>
+                        <span id="m-copy" class="button is-light is-small">Copy With Checksum</span>
+                    </div>
+                    <div class="buttons has-addons is-centered is-hidden-mobile">
+                        <span id="chk-address" class="button is-dark">No Address</span>
+                        <span id="copy" class="button is-light">Copy With Checksum</span>
+                    </div>
+                    <div class="box" id="box">
+                        <p>No address provided, why not try out one of the examples?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-foot">
+                <div class="box content has-text-centered">
+                    <p>Coinhako support the Zilliqa mainnet swap - ERC20 deposits, mainnet deposits, and mainnet withdrawals available now! <a class="has-text-link" href="https://www.coinhako.com/">Swap Today!</a></p>
+                </div>
+            </div>
+        </section>
+        <script src="dist/main.js"></script>
+    </body>
+</html>
